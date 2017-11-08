@@ -2,7 +2,7 @@
 # When this is instatiated, it should put stock
 # its shelf with the necessary ingredients
 # to make the recipe if it's working properly.
-
+require 'pry'
 class Pantry
 
   def initialize
@@ -15,6 +15,7 @@ class Pantry
   end
 
   def stock_shelf
+    # binding.pry
     Ingredient.names.each do |ingredient_name|
       3.times do
         @shelf.contents << Ingredient.new(ingredient_name)

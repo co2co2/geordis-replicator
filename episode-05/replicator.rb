@@ -1,3 +1,5 @@
+
+
 class Replicator
 
   # When the Enterprise calls Replicator.new, this method executes.
@@ -8,7 +10,7 @@ class Replicator
 
     # Setup the inside of the replicator. This is where the drink is made.
     @inside_replicator = Location.new
-
+# binding.pry
     # Setup the outside of the replicator. This is where the
     # final drink should end up for the character to consume.
     @plate = Location.new

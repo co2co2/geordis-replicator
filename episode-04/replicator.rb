@@ -1,3 +1,5 @@
+require 'pry'
+
 class Replicator
 
   # When the Enterprise calls Replicator.new, this method executes.
@@ -114,7 +116,7 @@ class Replicator
       @enterprise.transporter.energize(
         # Geordi is in a jokey mood and
         # reprograms the replicator
-        @enterprise.pantry.find_ingredient('banana'),
+        @enterprise.pantry.find_ingredient(ingredient_name),
         @enterprise.pantry.shelf,
         glass_inside_replicator.inside
       )

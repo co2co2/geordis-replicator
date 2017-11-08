@@ -1,6 +1,6 @@
 # Each ingredient is an instance of this class.
 # An ingredient instance is very simple -- it just has a name.
-
+require 'pry'
 class Ingredient
 
   # This method obtains all the ingredients from all the
@@ -14,7 +14,7 @@ class Ingredient
 
     [episode_recipe_ingredients + other_ingredients].flatten.uniq
   end
-
+# binding.pry
   def initialize(name)
     @name = name
   end
