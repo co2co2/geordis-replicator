@@ -148,7 +148,7 @@ class Replicator
     desired_temperature         = @recipe.temperature
     maximum_adjustments_allowed = 75
     number_of_adjustments       = 0
-    
+
 
     # Keep adjusting temperature until desired temperature is reached
     # or too many attempts have been made to adjust temperature.
@@ -171,6 +171,7 @@ class Replicator
     # If successful, @enterprise.reactor.core will now be empty
     # and @inside_replicator will once again contain the glass.
     # transport_glass_from_reactor
+    transport_glass_from_reactor
 
   end
 
